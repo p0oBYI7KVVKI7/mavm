@@ -45,3 +45,5 @@ este comando permite volver a iniciar el video, este comando no se puede volver 
 este comando es el unico (al escibir esto) que se ejcuta fuera de un comando tipo "{"<nombre_del_menu>": [<comando>]}" sirve para esperar x tiempo hasta el siguiente comando
 
 las imagenes, botones y videos se pondran uno encima del otro dependiendo de cual este escrita su creacion primero (no se toma en cuenta la edicion para eso) si x comando se escribe antes que z comando (siempre y cuando sean imagenes, videos o botones, en cqaso contrario, por ejemplo sea un teleport se limpia la pantalla y se muestra el video/menu al que mando el teleport) z comando estara arriba de x comando en la visualizacion
+
+en el archivo de ejemplo las imagenes, videos y menus estan organizados dentro de carpetas, eso no es obligatorio, pero es recomendable
