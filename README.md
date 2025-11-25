@@ -20,7 +20,7 @@ donde los comandos se ejecutan en bucle permanente hasta cerrar el video
 {"menu": ["create", "<nombre_del_menu>"]}
 este comando crea el contenedor del menu
 
-{"<nombre_del_menu>": [<comando>]}
+{"<nombre_del_menu>": [ <comando> ]}
 esto indica que el comando se va a ejecutar
 
 {"resolution": [<resolucion_eje_X>,<resolucion_eje_Y>]}
