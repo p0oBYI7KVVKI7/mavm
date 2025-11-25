@@ -29,7 +29,7 @@ con este comando define el tamaño de las coordenadas, estas no son pixeles, sol
 {"image": [<create/edit>,<id_de_la_imagen_a_crear_o_editar>, "coordinates",<cordenada_eje_x_inicio>,<cordenada_eje_y_inicio>,<cordenada_eje_x_fin>,<cordenada_eje_y_fin>, "<ubicacion_de_la_imagen_dentro_del_contenedor>"]}
 este comando es para poner imagenes
 
-{"button": [<create/edit>,<id_del_boton_a_crear_o_editar>, "coordinates",<cordenada_eje_x_inicio>,<cordenada_eje_y_inicio>,<cordenada_eje_x_fin>,<cordenada_eje_y_fin>, "title","background2", "command",<comando_a_ejecutar_al_hacer_click>]}
+{"button": [<create/edit>,<id_del_boton_a_crear_o_editar>, "coordinates",<cordenada_eje_x_inicio>,<cordenada_eje_y_inicio>,<cordenada_eje_x_fin>,<cordenada_eje_y_fin>, "title",<titulo_del_boton_>, "command",<comando_a_ejecutar_al_hacer_click>]}
 este comando es para crear botones que permiten ejecutar otro comando al hacerler click
 
 {"teleport":[<ubicacion_del_archivo_a_teletransportar]}
