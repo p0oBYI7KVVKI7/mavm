@@ -33,7 +33,7 @@ este comando es para poner imagenes
 este comando es para crear botones que permiten ejecutar otro comando al hacerler click
 
 {"teleport":[<ubicacion_del_archivo_a_teletransportar]}
-el comando teleport cumple la funcion de teletrasnportarte a otro menu o a un video si quieres que te tele transporte a mas de un video por dentro de los corchetes los lugares a los que quieres que te teletransporte en orden siendo el primer objeto pusto el primer objeto al que te teletransporta y el ultimo objeto el ultimo al que teletransporta
+el comando teleport cumple la funcion de teletrasnportarte a otro menu o a un video, si quieres que te teletransporte a mas de un video por dentro de los corchetes los lugares a los que quieres que te teletransporte en orden siendo el primer objeto pusto el primer objeto al que te teletransporta y el ultimo objeto el ultimo al que teletransporta
 
 {"video":[<create/edit>,<id_del_video_a_crear_o_editar>, "coordinates",<cordenada_eje_x_inicio>,<cordenada_eje_y_inicio>,<cordenada_eje_x_fin>,<cordenada_eje_y_fin>, <ubicacion_del_video_dentro_del_contenedor>]}
 este comando permite poner videos dentro de un menu que se iniciaran automaticamente al entrar al menu, no se esperara a que termine el video para ejecutar el siguiente comando, se hara a la vez
