@@ -15,7 +15,7 @@ despues esta
 "loop":[
 <comandos>
 ]
-donde los comandos se ejecutan en bucle permanente hasta cerrar el video o cambiar de menu
+donde los comandos se ejecutan en bucle permanente hasta cerrar el video o cambiar el menu
 
 {"menu": ["create", "<nombre_del_menu>"]}
 este comando crea el contenedor del menu
@@ -30,7 +30,7 @@ con este comando define el tamaño de las coordenadas, estas no son pixeles, sol
 este comando es para poner imagenes
 
 {"button": [<create/edit>,<id_del_boton_a_crear_o_editar>, "coordinates",<cordenada_eje_x_inicio>,<cordenada_eje_y_inicio>,<cordenada_eje_x_fin>,<cordenada_eje_y_fin>, "title",<titulo_del_boton_>, "color",[<color_rgb_rojo>,<color_rgb_verde>,<color_rgb_azul>], "command",<comando_a_ejecutar_al_hacer_click>], "command4selection",<comando_que_ejecutar_al_seleccionar>, "command4no_selection",<comando_que_ejecutar_al_dejar_de_seleccionar>}
-este comando es para crear botones que permiten ejecutar otro comando al hacerler click, al seleccionar y al dejar de seleccionar
+este comando es para crear botones que permiten ejecutar otro comando (o comandos si estan entre -> []) al hacerler click, al seleccionar y al dejar de seleccionar
 
 {"teleport":[<ubicacion_del_archivo_a_teletransportar]}
 el comando teleport cumple la funcion de teletrasnportarte a otro menu o a un video, si quieres que te teletransporte a mas de un video por dentro de los corchetes los lugares a los que quieres que te teletransporte en orden siendo el primer objeto puesto es el primer objeto al que te teletransporta y el ultimo objeto es el ultimo al que teletransporta
@@ -46,6 +46,9 @@ este comando es el unico (al escibir esto) que se ejcuta fuera de un comando tip
 
 {"button_default":[<id_del_boton>]}
 este comando permite establecer un boton como el por defecto seleccionado al entrar al menu
+
+["sound":[<sonido_a_reproducir>]]
+este comando permite ejecutar sonidos al, por ejemplo, presionar un boton
 
 las imagenes, botones y videos se pondran uno encima del otro dependiendo de cual este escrita su creacion primero (no se toma en cuenta la edicion para eso) si "x" comando se escribe antes que "z" comando (siempre y cuando sean imagenes, videos o botones, en caso contrario, por ejemplo sea un teleport se limpia la pantalla y se muestra el video/menu al que mando el teleport) "z" comando estara arriba de "x" comando en la visualizacion
 
