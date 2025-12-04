@@ -68,4 +68,4 @@ contenido ejemplo:
 
 nombracion de versiones:
 
-v.-version_de_cambios_grandes-.-version_de_cambios_pequeños-.-correccion_de_errores-
+v.-version_de_cambios_grandes-.-version_de_cambios_pequeños/medianos-.-correccion_de_errores-
