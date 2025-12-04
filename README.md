@@ -47,8 +47,11 @@ este comando es el unico (al escibir esto) que se ejcuta fuera de un comando tip
 {"button_default":[<id_del_boton>]}
 este comando permite establecer un boton como el por defecto seleccionado al entrar al menu
 
-["sound":[<sonido_a_reproducir>]]
-este comando permite ejecutar sonidos al, por ejemplo, presionar un boton
+["sound":["create",<id_del_sonido>, <sonido_a_reproducir>, "volume",<volumen_del_sonido_del_1_al_100>]]
+este comando permite ejecutar sonidos al, por ejemplo, presionar un boton pudiendo elegir ewl volumen
+
+["sound":["edit",<id_del_sonido>, "volume",<volumen_del_sonido_del_1_al_100>]]
+este comando permite editar el volumen de un sonido
 
 las imagenes, botones y videos se pondran uno encima del otro dependiendo de cual este escrita su creacion primero (no se toma en cuenta la edicion para eso) si "x" comando se escribe antes que "z" comando (siempre y cuando sean imagenes, videos o botones, en caso contrario, por ejemplo sea un teleport se limpia la pantalla y se muestra el video/menu al que mando el teleport) "z" comando estara arriba de "x" comando en la visualizacion
 
