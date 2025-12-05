@@ -1,6 +1,6 @@
-el formato mvam es un contenedor de video basado en mkv, 7zip y json capaz de contener los archivos de menus y varios videos con sus pistas de audio y subtitulos
+el formato mvam es un contenedor de video basado en mkv y json capaz de contener los archivos de menus y varios videos con sus pistas de audio y subtitulos
 
-el archivo por defecto de ejecucion es el start.json ubicado dentro del archivo comprimido del contenedor que es un 7zip renombrado con la extencion .mavm (matroska video menu)
+el archivo por defecto de ejecucion es el start.json ubicado dentro del un mkv renombrado con la extencion .mavm (matroska video menu)
 
 
 los comandos de los menus son:
@@ -55,13 +55,13 @@ este comando permite editar el volumen de un sonido
 
 las imagenes, botones y videos se pondran uno encima del otro dependiendo de cual este escrita su creacion primero (no se toma en cuenta la edicion para eso) si "x" comando se escribe antes que "z" comando (siempre y cuando sean imagenes, videos o botones, en caso contrario, por ejemplo sea un teleport se limpia la pantalla y se muestra el video/menu al que mando el teleport) "z" comando estara arriba de "x" comando en la visualizacion
 
-en el archivo de ejemplo las imagenes, videos y menus estan organizados dentro de carpetas, eso no es obligatorio, pero es recomendable
+en el archivo de ejemplo las imagenes, videos y menus estan organizados dentro de una misma carpeta, puedes hacerlo distinto pero se te puede complicar el comando teleport
 
 
 archivo "metadata.json"
 contenido ejemplo:
 {
-    "mavm_version": "v.1.0.1",
+    "mavm_version": "v.2.0.0",
     "descripcion": {
         "text": "example description",
         "duration":3
@@ -75,3 +75,16 @@ contenido ejemplo:
 nombracion de versiones:
 
 v.-version_de_cambios_grandes-.-version_de_cambios_pequeños/medianos-.-correccion_de_errores-
+
+
+uso de creador_mavm.7z:
+
+primero extrae el contenido
+instala python (recomiendo python3.10 porque ese use para las pruebas)
+segundo instalas las depedencias del archivo "requirements_creador_mavm.txt"
+tercero crea los menus y archivo de metadata
+cuarto crea el archivo que indique las ubicaciones de los archivos diferenciando los archivos por un salto de linea
+quinto usar el script de python para conbinar todo, importante tener un video mkv, no importa mucho su contenido ya que este no se va a usar al reproducir
+
+uso del script:
+python3.10 creador_mavm.py --file_e -archivo_base- --files_r -archivo_txt_con_la_lista_de_archivos- --file_out -archiv_de_salida_.mavm-
