@@ -29,7 +29,7 @@ con este comando define el tamaño de las coordenadas, estas no son pixeles, sol
 {"image": [-create/edit-,-id_de_la_imagen_a_crear_o_editar-, "coordinates",-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-, "-ubicacion_de_la_imagen_dentro_del_contenedor-"]}
 este comando es para poner imagenes
 
-{"button": [-create/edit-,-id_del_boton_a_crear_o_editar-, "coordinates",-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-, "title",-titulo_del_boton_-, "color",[-color_rgb_rojo-,-color_rgb_verde-,-color_rgb_azul-], "command",-comando_a_ejecutar_al_hacer_click-], "command4selection",-comando_que_ejecutar_al_seleccionar-, "command4no_selection",-comando_que_ejecutar_al_dejar_de_seleccionar-}
+{"button": [-create/edit-,-id_del_boton_a_crear_o_editar-, "coordinates",-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-, "title",-titulo_del_boton_-, "color",[-color_rgb_rojo-,-color_rgb_verde-,-color_rgb_azul-], "command_click",-comando_a_ejecutar_al_hacer_click-], "command4selection",-comando_que_ejecutar_al_seleccionar-, "command4no_selection",-comando_que_ejecutar_al_dejar_de_seleccionar-}
 este comando es para crear botones que permiten ejecutar otro comando (o comandos si estan entre --> []) al hacerler click, al seleccionar y al dejar de seleccionar
 
 {"teleport":[-ubicacion_del_archivo_a_teletransportar]}
