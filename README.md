@@ -94,4 +94,4 @@ python3.10 creador_mavm.py --file_e -archivo_base- --files_r -archivo_txt_con_la
 
 nombracion de versiones:
 
-v.-version_de_cambios_grandes-.-version_de_cambios_pequeños/medianos-.-correccion_de_errores--correciones_del_README.md_no_se_incluye_en_"mavm_version"_de_"metadata.json"-
+v.-version_de_cambios_grandes-.-version_de_cambios_pequeños/medianos-.-correccion_de_errores--correciones_del_README.md_o_el_video_de_ejemplo_no_se_incluye_en_"mavm_version"_de_"metadata.json"-
