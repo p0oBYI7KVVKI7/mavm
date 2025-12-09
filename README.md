@@ -3,7 +3,7 @@ el formato mavm es un contenedor de video basado en mkv y json capaz de contener
 el archivo por defecto de ejecucion es el start.json ubicado dentro del un mkv renombrado con la extencion .mavm (matroska video menu)
 
 
-los comandos de los menus son (cada qu escribas un comando debes poner todos los parametros a no se que se espesifique que el parametro el opcional):
+los comandos de los menus son (cada que escribas un comando debes poner todos los parametros a no se que se espesifique que el parametro el opcional):
 
 "start": [
 -comandos-
