@@ -64,7 +64,7 @@ las imagenes, botones y videos se pondran uno encima del otro dependiendo de cua
 en el archivo de ejemplo las imagenes, videos y menus estan organizados dentro de una misma carpeta, puedes hacerlo distinto pero se te puede complicar el comando teleport
 
 
-archivo "
+archivo "metadata.json"
 contenido ejemplo:
 {
     "mavm_version": "v.2.0.0",
