@@ -66,7 +66,37 @@ This command is used to edit text.
 
 Images, buttons, and videos will be placed one on top of the other depending on which one is written first (editing is not taken into account for this). If the "x" command is written before the "z" command (as long as they are images, videos, or buttons; otherwise, for example, if it is a teleport, the screen is cleared and the (displays the video/menu to which the teleport sends) The "z" command will be above the "x" command in the display.
 
-## In the example file, the images, vi
+## In the example file, the images, videos, and menus are organized within the same folder. You can do it differently, but it might complicate the teleport command.
+
+File "metadata.json"
+Example content:
+{
+"mavm_version": "v.2.0.0",
+"description": {
+"text": "example description",
+"duration": 3
+
+}
+}
+
+"mavm_version" is the MAVM version the file uses.
+"description" is the file description, the data that will be displayed when the file is opened, along with the duration in seconds it will be displayed.
+
+## Using creator_mavm:
+
+Install Python (I recommend Python 3.10 because that's what I used for testing).
+Second, install the dependencies from the "requirements_creador_mavm.txt" file.
+Third, create the menus and metadata file.
+Fourth, create the file I specified. The file locations are differentiated by a line break.
+Fifth, use the Python script to combine everything. It's important to have an MKV video file; its content isn't crucial since it won't be used during playback.
+
+Script usage:
+python3.10 creator_mavm.py --file_e -base_file- --files_r -txt_file_with_the_file_list- --file_out -output_file_.mavm-
+
+Version naming:
+
+v - version of large changes - version of small/medium changes - bug_corrections - corrections of the README.md. The example video or the MAVM creator is not included in the "mavm_version" of the "metadata.json" file.
+
 
 ## Español:
 
