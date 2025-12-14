@@ -4,7 +4,7 @@
 
 ## The MAVM format is a video container based on MKV and JSON, capable of holding menu files and multiple videos with their audio tracks and subtitles.
 
-Player for the format: [MaVMPlayer](https://github.com/SoPepo32/reproductormavm)
+Player for the format: [SoPepo32/MaVMPlayer](https://github.com/SoPepo32/reproductormavm)
 
 The default execution file is start.json, located inside an MKV file renamed with the .mavm extension (Matroska Video Menu).
 
