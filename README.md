@@ -1,5 +1,75 @@
 <h1>MaVM</h1>
 
+## English:
+
+## The MAVM format is a video container based on MKV and JSON, capable of holding menu files and multiple videos with their audio tracks and subtitles.
+
+Player for the format: [MaVMPlayer](https://github.com/SoPepo32/mavmplayer)
+
+The default execution file is start.json, located inside an MKV file renamed with the .mavm extension (Matroska Video Menu).
+
+## The menu commands are (each time you write a command, you must include all parameters unless otherwise specified):
+
+"start": [
+-commands-
+]
+where the commands are executed when the video starts.
+
+Then there is:
+
+"loop": [
+-commands-
+]
+where the commands are executed in a continuous loop until the video closes or the menu changes.
+
+{"menu": ["create", "-menu_name-"]}
+This command creates the menu container.
+
+{"-menu_name-": [-command-]}
+This indicates that the command inside the square brackets [] will be executed.
+
+{"resolution": [-x_axis_resolution-,-y_axis_resolution-]}
+This command defines the size of the coordinates. These are not pixels; they are coordinates that indicate the level of detail in the coordinates, avoiding decimals.
+
+{"image": [-create/edit-,-id_of_the_image_to_create_or_edit-, "coordinates",-start_x_axis_coordinates-,-start_y_axis_coordinates-,-end_x_axis_coordinates-, "-image_location_within_the_container-"]}
+This command is for setting Images
+
+{"button": [-create/edit-,-id_of_the_button_to_create_or_edit-, "coordinates",-start_x_axis_coordinate-,-start_y_axis_coordinate-,-end_x_axis_coordinate-,-end_y_axis_coordinate-, "title",-button_title-, "color",[-red_rgb_color-,-green_rgb_color-,-blue_rgb_color-], "command_click",-command_to_execute_on_click-], "command4selection",-command_to_execute_on_selection-, "command4no_selection",-command_to_execute_on_de-selection-}
+This command is for creating buttons that allow you to execute another command (or commands if they are between --> []) when clicked. When selected and when deselected. The parameters ""command_click",-command_to_execute_on_click-]", ""command4selection",-command_to_execute_on_selection-" and ""command4no_selection",-command_to_execute_on_deselection-" are optional.
+
+{"teleport":[-location_of_file_to_teleport]}
+The teleport command teleports you to another menu or a video. If you want to teleport to more than one video, place the locations you want to teleport to inside the brackets, in order. The first item listed is the first item you are teleported to, and the last item is the last item you are teleported to.
+
+{"video":[-create/edit-,-id_of_video_to_create_or_edit-, "coordinates", -start_x_coordinate-, -start_y_coordinate-, -end_x_coordinate-, -end_y_coordinate-, -video_location_within_container-]}
+This command allows you to place videos within a menu that will start automatically when the menu is accessed. It won't wait for the video to finish before executing the next command; it will execute both simultaneously.
+
+{"video":["edit", -video_id-, "restart"]}
+This command allows you to restart the video. This command cannot be executed again with the same video until the video has finished, because you can only restart a video that has already finished, regardless of how long ago it ended.
+
+{"time": ["wait", -wait_time-, -seconds/minutes/hours-]}
+This command is the only one (when written) that executes outside of a command like "{"-menu_name-": [-command-]}" is used to wait "x" amount of time until the next command.
+
+{"button_default":[-button_id-]}
+This command allows you to set a button as the default button selected when entering the menu.
+
+{"sound":["create",-sound_id-, -sound_to_play-, "volume",-sound_volume_from_1_to_100-]}
+This command allows you to play sounds when, for example, a button is pressed, and you can choose the volume.
+
+{"sound":["edit",-sound_id-, "volume",-sound_volume_from_1_to_100-]}
+This command allows you to edit the volume of a sound.
+
+{"text":["create",-text_id- "coordinates", -start_x_axis_coordinates-, -start_y_axis_coordinates-, -end_x_axis_coordinates-, -end_y_axis_coordinates-, "text", -text-]}
+This command is used to create text.
+
+{"text":["edit", -id_of_text_to_edit- "coordinates", -start_x_axis_coordinates-, -start_y_axis_coordinates-, -end_x_axis_coordinates-, -end_y_axis_coordinates-, "text", -text-]}
+This command is used to edit text.
+
+Images, buttons, and videos will be placed one on top of the other depending on which one is written first (editing is not taken into account for this). If the "x" command is written before the "z" command (as long as they are images, videos, or buttons; otherwise, for example, if it is a teleport, the screen is cleared and the (displays the video/menu to which the teleport sends) The "z" command will be above the "x" command in the display.
+
+## In the example file, the images, vi
+
+## Español:
+
 ## el formato mavm es un contenedor de video basado en mkv y json capaz de contener los archivos de menus y varios videos con sus pistas de audio y subtitulos
 
 reproductor para el formato: [RreproductorMaVM](https://github.com/SoPepo32/reproductormavm)
