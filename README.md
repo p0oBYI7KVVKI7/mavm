@@ -107,7 +107,7 @@ reproductor para el formato: [RreproductorMaVM](https://github.com/SoPepo32/repr
 el archivo por defecto de ejecucion es el start.json ubicado dentro del un mkv renombrado con la extencion .mavm (matroska video menu)
 
 
-## los comandos de los menus son (cada que escribas un comando debes poner todos los parametros a no se que se especifique que el parametro el opcional):
+## los comandos de los menus son (cada que escribas un comando debes poner todos los parametros a no se que se especifique que el parametro es opcional):
 
 "start": [
 -comandos-
