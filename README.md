@@ -95,7 +95,7 @@ python3.10 creator_mavm.py --file_e -base_file- --files_r -txt_file_with_the_fil
 
 Version naming:
 
-v - version of large changes - version of small/medium changes - bug_corrections - corrections of the README.md. The example video or the MAVM creator is not included in the "mavm_version" of the "metadata.json" file.
+v - version of large changes - version of small/medium changes - bug_corrections - corrections of the README.md. The example video (video_de_ejemplo.mavm) or the MAVM creator is not included in the "mavm_version" of the "metadata.json" file.
 
 
 ## Español:
