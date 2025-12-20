@@ -6,7 +6,13 @@
 
 Player for the format: [SoPepo32/MaVMPlayer](https://github.com/SoPepo32/reproductormavm)
 
-The default execution file is start.json, located inside an MKV file renamed with the .mavm extension (Matroska Video Menu).
+The default execution file is start.json, located within the file with the .mavm extension (Matroska Video Menu).
+
+## .mavm file format:
+```MaVM
+-++<filename_including_extension>+--<file_contained_in_binary_format>
+```
+and repeats for each file
 
 ## The menu commands are (Every time you write a command, you must include all parameters unless it is specified that the parameter is optional):
 
@@ -104,8 +110,13 @@ v - version of large changes - version of small/medium changes - bug_corrections
 
 reproductor para el formato: [RreproductorMaVM](https://github.com/SoPepo32/reproductormavm)
 
-el archivo por defecto de ejecucion es el start.json ubicado dentro del un mkv renombrado con la extencion .mavm (matroska video menu)
+El archivo de ejecución predeterminado es start.json, ubicado dentro del archivo con la extensión .mavm (Matroska Video Menu).
 
+### Formato de archivo .mavm:
+```MaVM
+-++<nombre_de_archivo_incluida_la_extensión>+--<archivo_contenido_en_formato_binario>
+```
+y se repite para cada archivo
 
 ## los comandos de los menus son (cada que escribas un comando debes poner todos los parametros a no ser que se especifique que el parametro es opcional):
 
