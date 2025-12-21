@@ -105,6 +105,8 @@ Version naming:
 
 v - version of large changes - version of small/medium changes - bug_corrections - corrections of the README.md. The example video (video_de_ejemplo.mavm) or the MAVM creator is not included in the "mavm_version" of the "metadata.json" file.
 
+## License
+All content in this repository is under GPL-3.0.
 
 ## Español:
 
@@ -213,3 +215,6 @@ Para más información
 nombracion de versiones:
 
 v.-version_de_cambios_grandes-.-version_de_cambios_pequeños/medianos-.-correccion_de_errores--correciones_del_README.md_el_video_de_ejemplo(video_de_ejemplo.mavm)_o_creador_mavm_no_se_incluye_en_"mavm_version"_de_"metadata.json-
+
+## Licencia
+Todo el contenido de este repositorio está bajo GPL-3.0.
