@@ -1,0 +1,7 @@
+1
+00:00:00,00 --> 00:00:04,50
+este es un subtitulo de ejemplo
+
+2
+00:00:05,00 --> 00:00:10,00
+este es otro subtitulo de ejemplo
