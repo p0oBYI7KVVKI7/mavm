@@ -6,8 +6,6 @@
 
 Player for the format: [SoPepo32/MaVMPlayer](https://github.com/SoPepo32/reproductormavm)
 
-link for the [FMaVM](https://github.com/SoPepo32/fmavm) repository
-
 The default execution file is start.json, located within the file with the .mavm extension (Matroska Video Menu).
 
 ## .mavm file format:
@@ -46,7 +44,7 @@ This command is for setting Images
 This command is for creating buttons that allow you to execute another command (or commands if they are between --> []) when clicked. When selected and when deselected. The parameters ""command_click",-command_to_execute_on_click-", ""command4selection",-command_to_execute_on_selection- and ""command4no_selection",-command_to_execute_on_deselection- are optional.
 
 {"teleport":[-location_of_file_to_teleport]}
-The teleport command teleports you to another menu or a video. If you want to teleport to more than one video, place the locations you want to teleport to inside the brackets, in order. The first item listed is the first item you are teleported to, and the last item is the last item you are teleported to.
+The teleport command teleports you to another menu or a video. If you want to teleport to more than one video, place the locations you want to teleport to inside the brackets, in order. The first item listed is the first item you teleport to, and the last item is the final item you teleport to. If you use it to teleport to a video, you can (optionally) specify the part of the video to which you teleport using ["-hour:minutes:seconds-","-hour:minutes:seconds-"], where the first value is the starting point and the second value is the ending point. For example... Usage: {"teleport":["video.mkv", ["00:00:05.5000","00:00:30.0000"]]} Here, only seconds 5.5 to 30 are played, and yes, you have to include the full number of zeros and decimal places even if you're not using minutes and hours. If the hours are more than 99 (unlikely), just use "-100:minutes:seconds-" (replacing 100 with the hours). I hope this clarifies that hours can have as many digits as you need, but they cannot be less than 2. If it's one hour, use 01; if it's 10, use 10; and if it's 100, use 100.
 
 {"video":[-create/edit-,-id_of_video_to_create_or_edit-, "coordinates", -start_x_coordinate-, -start_y_coordinate-, -end_x_coordinate-, -end_y_coordinate-, "video_path",-video_location_within_container-]}
 This command allows you to place videos within a menu that will start automatically when the menu is accessed. It won't wait for the video to finish before executing the next command; it will execute both simultaneously.
@@ -116,8 +114,6 @@ All content in this repository is under GPL-3.0.
 
 reproductor para el formato: [RreproductorMaVM](https://github.com/SoPepo32/reproductormavm)
 
-Enlace para el repositorio [FMaVM](https://github.com/SoPepo32/fmavm)
-
 El archivo de ejecución predeterminado es start.json, ubicado dentro del archivo con la extensión .mavm (Matroska Video Menu).
 
 ### Formato de archivo .mavm:
@@ -155,8 +151,8 @@ este comando es para poner imagenes
 {"button": [-create/edit-,-id_of_the_button_to_create_or_edit-, "coordinates",-inicio_x_coordenada-,-inicio_y_coordenadas-,-final_x_coordenadas-,-final_y_coordenadas-, -title/image-,-title_del_boton/ubicacion_de_la_imagen_en_el_contenedor-, "color",[-red_rgb_color-,-green_rgb_color-,-blue_rgb_color-], "command_click",-command_to_execute_on_click-], "command4selection",-command_to_execute_on_selection-, "command4no_selection",-command_to_execute_on_deletion-}
 Este comando permite crear botones que permiten ejecutar otro comando (o comandos si están entre --> []) al hacer clic, al seleccionar y al deseleccionar. Los parámetros "command_click", "command_to_execute_on_click", "command4selection", "command_to_execute_on_selection" y "command4no_selection", "command_to_execute_on_deselection" son opcionales.
 
-{"teleport":[-ubicacion_del_archivo_a_teletransportar]}
-el comando teleport cumple la funcion de teletrasnportarte a otro menu o a un video, si quieres que te teletransporte a mas de un video por dentro de los corchetes los lugares a los que quieres que te teletransporte en orden siendo el primer objeto puesto es el primer objeto al que te teletransporta y el ultimo objeto es el ultimo al que teletransporta
+{"teleport":[-ubicacion_del_archivo_a_teletransportar-]}
+el comando teleport cumple la funcion de teletrasnportarte a otro menu o a un video, si quieres que te teletransporte a mas de un video por dentro de los corchetes los lugares a los que quieres que te teletransporte en orden siendo el primer objeto puesto es el primer objeto al que te teletransporta y el ultimo objeto es el ultimo al que teletransporta. si lo usas para teletransportarte a un video puede (opcional) establecer a que parte del video con ["-hora:minutos:segundos-","-hora:minutos:segundos-"] siendo el primer valor de donde empiezas y donde terminas el segundo valor ejemplo. de uso: {"teleport":["video.mkv", ["00:00:05.5000","00:00:30.0000"]]} aca solo se reproduce del segundo 5.5 al 30 y si, se tienen que poner los ceros y decimales completos aun que no se usen los minutos y horas, si las horas son mas de 99 (cosa poco probable) solo pones "-100:minutos:segundos-" (remplazas 100 por las horas) espero que con esta aclacion haya quedado claro que las horas pueden tener cuantos digitos necesites pero no puen ser menos de 2 si es una hora se pone 01 si son 10 se pone 10 y si son 100 se pone 100
 
 {"video":[-create/edit-,-id_del_video_a_crear_o_editar-, "coordinates",-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-, "video_path",-ubicacion_del_video_dentro_del_contenedor-]}
 este comando permite poner videos dentro de un menu que se iniciaran automaticamente al entrar al menu, no se esperara a que termine el video para ejecutar el siguiente comando, se hara a la vez
