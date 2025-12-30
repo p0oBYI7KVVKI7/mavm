@@ -6,7 +6,7 @@
         {"menu1": [{"image": ["create","img1", "coordinates",0,0,1920,1080, "background1.png"]}]},
         {"menu1": [{"button": ["create","backgroundbutton1", "coordinates",100,100,700,300, "title","background2", "color",[128,128,128], "command_click",{"image":["edit","img1", "coordinates", 0,0,1920,1080, "background2.png"]}]}]},
         {"menu1": [{"button":["create","videobutton1", "coordinates",100,300,700,500, "title","video1", "color",[128,128,128], "command_click",[{"sound":["create","sound1", "sound1.opus", "volume",37]},{"teleport":["video1.mkv",[1,1,1], "menu1.json"]}], "command4selection",{"button": ["edit","videobutton1", "coordinates",100,300,700,500, "title","video1", "color",[128,128,255]]}, "command4no_selection",{"button": ["edit","videobutton1", "coordinates",100,300,700,500, "title","video1", "color",[128,128,128]]}]}]},
-        {"menu1": {"ebook": ["create","e1", "epub_path","ebook1.epub", "page",0, "coordinates",[764,0,1920,1080]]}},
+        {"menu1": [{"ebook": ["create","e1", "epub_path","ebook1.epub", "page",0, "coordinates",[764,0,1920,1080]]}]},
         {"menu1": [{"button_default": ["backgroundbutton1"]}]}
     ],
     "loop":[
