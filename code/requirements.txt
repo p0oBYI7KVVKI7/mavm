@@ -1,0 +1,7 @@
+argparse==1.4.0
+pymkv2==2.1.2
+screeninfo
+EbookLib
+Pillow
+pygame
+imgkit
