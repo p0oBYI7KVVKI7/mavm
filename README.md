@@ -102,20 +102,7 @@ Example content:
 "mavm_version" is the MAVM version the file uses.
 "description" is the file description, the data that will be displayed when the file is opened, along with the duration in seconds it will be displayed.
 
-## Using mavm_packager:
-First, install Python (I recommend Python 3.10 because that's what I used for testing).
-Second, install the dependencies listed in the "requirements.txt" file.
-Third, create the menus and metadata file.
-Fourth, create the file that specifies the file locations, separating them with a line break.
-Fifth, use the Python script to combine everything.
-
-Script usage:
-python3.10 mavm_packager.py --file_e -base_file- --files_r -txt_file_with_the_file_list- --file_out -output_file_.mavm-
-
-python3.10 mavm_packager.py -h
-For more information
-
-Version naming:
+## Version naming:
 
 v - version of large changes - version of small/medium changes - bug_corrections - corrections of the README.md. The example video (video_de_ejemplo.mavm) or the MAVM creator is not included in the "mavm_version" of the "metadata.json" file.
 
@@ -225,23 +212,7 @@ contenido ejemplo:
 "mavm_version" es la version de mavm con la que trabaja el archivo
 "descripcion" es la descripcion del archivo, datos que se mostraran al abrir el archivo junto al tiempo por el que se mostrara en segundos
 
-
-
-## Usando mavm_packager:
-
-Primero, instala Python (recomiendo Python 3.10 porque es el que usé para las pruebas).
-Segundo, instala las dependencias listadas en el archivo "requirements.txt".
-Tercero, crea el archivo de menús y metadatos.
-Cuarto, crea el archivo que especifica las ubicaciones de los archivos, separándolos con un salto de línea.
-Quinto, usa el script de Python para combinar todo.
-
-uso del script:
-python3.10 mavm_packager.py --files_r -archivo_txt_con_la_lista_de_archivos- --file_out -archiv_de_salida_.mavm-
-
-python3.10 mavm_packager.py -h
-Para más información
-
-nombracion de versiones:
+## nombracion de versiones:
 
 v.-version_de_cambios_grandes-.-version_de_cambios_pequeños/medianos-.-correccion_de_errores--correciones_del_README.md_el_video_de_ejemplo(video_de_ejemplo.mavm)_o_creador_mavm_no_se_incluye_en_"mavm_version"_de_"metadata.json-
 
