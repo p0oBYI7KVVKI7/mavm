@@ -77,6 +77,8 @@ This command allows you to import a page from an epub and place it as an image i
 
 Images, buttons, and videos will be placed one on top of the other depending on which one was created first (editing is not taken into account for this). If command "x" is written before command "z" (as long as they are images, videos, buttons, text, ebooks, etc., otherwise, for example, if it's a teleport, the screen is cleared and the video/menu to which the teleport sends is displayed). The "z" command will be above the "x" command in the display.
 
+The MaVM format does not support folders within its structure; instead, .tar files must be used.
+
 To import a file from a .tar archive, you must type the .tar archive name followed by a colon (:) and the name of the internal file you want to access, for example, file.tar:file.png or file.tar:folder/file.mkv. Files can be placed inside folders within a .tar archive. What can be placed inside a .tar archive includes content folders, images, videos, audio, and menus.
 
 ## In the example file, the images, videos, and menus are organized within the same folder. You can do it differently, but it might complicate the teleport command.
@@ -185,6 +187,8 @@ este comando sirve para editar un texto
 este comando permite importar una pagina de un epub y ponerla como una imagen en el menu
 
 las imagenes, botones y videos se pondran uno encima del otro dependiendo de cual este escrita su creacion primero (no se toma en cuenta la edicion para eso) si "x" comando se escribe antes que "z" comando (siempre y cuando sean imagenes, videos, botones, texto, ebook, etc, en caso contrario, por ejemplo sea un teleport se limpia la pantalla y se muestra el video/menu al que mando el teleport) "z" comando estara arriba de "x" comando en la visualizacion
+
+El formato MaVM no admite carpetas dentro de su estructura; en su lugar, se deben utilizar archivos .tar.
 
 Para importar un archivo desde un archivo .tar, debe escribir el nombre del archivo .tar seguido de dos puntos (:) y el nombre del archivo interno al que desea acceder, por ejemplo, file.tar:file.png o file.tar:folder/file.mkv. Los archivos se pueden colocar dentro de carpetas dentro de un archivo .tar. Entre los elementos que se pueden colocar dentro de un archivo .tar se incluyen carpetas de contenido, imágenes, vídeos, audio y menús.
 
