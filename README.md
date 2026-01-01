@@ -72,8 +72,8 @@ This command is used to create text.
 {"text":["edit", -id_of_text_to_edit- "coordinates", -start_x_axis_coordinates-, -start_y_axis_coordinates-, -end_x_axis_coordinates-, -end_y_axis_coordinates-, "text", -text-]}
 This command is used to edit text.
 
-{"ebook": ["create/edit", -page_id-, "epub_path", -epub_name_with_the_extension-, "page", -epub_page_to_import-, "coordinates", [ -start_x_coordinate-, -start_y_coordinate-, -end_x_coordinate-, -end_y_coordinate-]]}
-This command allows you to import a page from an epub and place it as an image in the menu.
+{"ebook": ["create/edit", -page_id-, "epub_path", -epub_name_with_the_extension-, "page", -episode_of_epub_to_import-, "coordinates", [ -start_x_coordinate-, -start_y_coordinate-, -end_x_coordinate-, -end_y_coordinate-]]}
+This command allows you to import a page from an epub and display it as an image in the menu.
 
 Images, buttons, and videos will be placed one on top of the other depending on which one was created first (editing is not taken into account for this). If command "x" is written before command "z" (as long as they are images, videos, buttons, text, ebooks, etc., otherwise, for example, if it's a teleport, the screen is cleared and the video/menu to which the teleport sends is displayed). The "z" command will be above the "x" command in the display.
 
@@ -183,7 +183,7 @@ este comando sirve para crear un texto
 {"text":["edit",-id_del_texto_a_editar- "coordinates",-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-, "text",-texto-]}
 este comando sirve para editar un texto
 
-{"ebook": ["create/edit",-id_de_la_pagina-, "epub_path",-nombre_del_epub_con_la_extencion-, "page",-pagina_del_epub_a_importar-, "coordinates",[-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-]]}
+{"ebook": ["create/edit",-id_de_la_pagina-, "epub_path",-nombre_del_epub_con_la_extencion-, "page",-apitulo_del_epub_a_importar-, "coordinates",[-cordenada_eje_x_inicio-,-cordenada_eje_y_inicio-,-cordenada_eje_x_fin-,-cordenada_eje_y_fin-]]}
 este comando permite importar una pagina de un epub y ponerla como una imagen en el menu
 
 las imagenes, botones y videos se pondran uno encima del otro dependiendo de cual este escrita su creacion primero (no se toma en cuenta la edicion para eso) si "x" comando se escribe antes que "z" comando (siempre y cuando sean imagenes, videos, botones, texto, ebook, etc, en caso contrario, por ejemplo sea un teleport se limpia la pantalla y se muestra el video/menu al que mando el teleport) "z" comando estara arriba de "x" comando en la visualizacion
