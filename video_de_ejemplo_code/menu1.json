@@ -2,7 +2,7 @@
     "start":[
         {"menu":["create","menu2"]},
         {"menu2": [{"resolution": [1920,1080]}]},
-        {"menu2": [{"video":["create","b", "coordinates",0,0,1920,1080, "video_path","video2.mkv"]}]},
+        {"menu2": [{"video":["create","b", "coordinates",0,0,1920,1080, "video_path","assets.tar:video/video2.mkv"]}]},
         {"time": ["wait",5,"seconds"]},
         {"menu2": [{"button":["create","skip1", "coordinates",1320,880,1920,1080, "image","assets.tar:images/arrow_not_selected.png", "color",[128,128,128], "command_click",[{"teleport":["menu2.json"]}]]}]},
         {"menu1": [{"button_default": ["skip1"]}]}
